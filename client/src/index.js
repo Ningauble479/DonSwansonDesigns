@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import AddProduct from './components/Admin/AddProduct'
 
 ReactDOM.render(
-<App />,
+    <Router>
+<Route exact path="/" component={App}/>
+<Route exact path="/AddProducts" component={AddProduct}/>
+</Router>,
 document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
