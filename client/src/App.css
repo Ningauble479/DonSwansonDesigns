@@ -1,0 +1,38 @@
+html body {
+    margin: 0;
+    overflow-x: hidden
+}
+
+.Main {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #fafbfc
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #24292e;
+    justify-content: space-around;
+    display: flex;
+    color: white
+}
+
+.headLink {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+}
+
+.headLink:visited {
+    color: white
+}
+
+#cardsBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
